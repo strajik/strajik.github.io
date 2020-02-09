@@ -1,4 +1,4 @@
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteCond %{HTTP_HOST} ^(www\.)?strajik\.com
-RewriteRule ^(.*)$ https://www.strajik.com/$1 [R,L]
+RewriteEngine on
+RewriteBase /
+rewritecond %{http_host} ^strajik.com [nc]
+rewriterule ^(.*)$ http://www.strajik.com/$1 [r=301,nc]
