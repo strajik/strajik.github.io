@@ -1,4 +1,0 @@
-RewriteCond %{HTTP_HOST} ^strajik\.io$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.strajik.github\.io$
-RewriteRule ^/?$ "http\:\/\/strajik\.com\/\?parameter\=value" [R=301,L]
-  
