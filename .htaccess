@@ -1,7 +1,4 @@
-
-When moving a domain name to a new domain where the only change to the url is the domain name, I use the following redirect in my Apache .htaccess file
-
-  RewriteEngine On
-  RewriteCond %{HTTP_HOST} ^strajik.com$ [OR]
-  RewriteCond %{HTTP_HOST} ^www.strajik.com$
-  RewriteRule ^(.*)$ http://strajik.github.io$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^strajik\.io$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.strajik.github\.io$
+RewriteRule ^/?$ "http\:\/\/strajik\.com\/\?parameter\=value" [R=301,L]
+  
