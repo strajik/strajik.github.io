@@ -1,4 +1,1 @@
-RewriteEngine on
-RewriteBase /
-rewritecond %{http_host} ^strajik.com [nc]
-rewriterule ^(.*)$ http://www.strajik.com/$1 [r=301,nc]
+Redirect 301 / http://www.strajik.com/
